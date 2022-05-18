@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #2A2A2A;
+}
+
+label {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+input {
+    position: absolute;
+    opacity: 0;
+}
+
+input:checked ~ .checkbox {
+    transform: rotate(45deg);
+    width: 20px;
+    margin-left: 16px;
+    border-color: #24c78e;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-radius: 0;
+}
+
+.checkbox:hover {
+    border: 3px solid #878686;
+    transition: all .3s;
+}
+
+.checkbox {
+    display: block;
+    width: inherit;
+    height: inherit;
+    border: 3px solid #434343;
+    border-radius: 5px;
+    transition: all .3s;
+}
