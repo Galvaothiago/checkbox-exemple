@@ -1,0 +1,1 @@
+#  Checkbox exemple - effect done
